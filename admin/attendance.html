@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="images/college-logo.png"  alt="" class="logo">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="title">INDIAN COLLEGE</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <i class="fa fa-dashboard icons"></i>
+                        <div class="title">Dashboard</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="student.html">
+                        <i class="fa fa-users icons"></i>
+                        <div class="title">Students</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="teacher.html">
+                        <i class="fa fa-user icons"></i>
+                        <div class="title">Teachers</div>
+                    </a>
+                </li>
+                <!-- <li>
+                    <a href="#">
+                        <i class="fa fa-graduation-cap icons"></i>
+                        <div class="title">Courses</div>
+                    </a>
+                </li> -->
+                <!-- <li>
+                    <a href="dept.html">
+                        <i class="fa fa-building icons"></i>
+                        <div class="title">Department</div>
+                    </a>
+                </li> -->
+                <!-- <li>
+                    <a href="#">
+                        <i class="fa fa-user-group icons"></i>
+                        <div class="title">Staffs</div>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="fee.html">
+                        <i class="fa fa-indian-rupee-sign icons"></i>
+                        <div class="title">Fees</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="attendance.html">
+                        <i class="fa fa-clipboard-user icons"></i>
+                        <div class="title">Attendance</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- main navbar -->
+        <div class="main">
+            <div class="top-bar">
+                <div class="search">
+                    <input type="text" name="search" placeholder="Search Here">
+                    <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
+                </div>
+                <i class="fa-solid fa-bell"></i>
+                <div class="user">
+
+                    
+                    <div class="dropdown">
+                        <button class="dropbtn"><img src="Images/admin.avif" alt="admin"></button>
+                        <div class="dropdown-content">
+                            <a href="profile.html">Profile</a>
+                            <a href="setting.html">Settings</a>
+                            <a href="index.html">Logout</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+             <!-- first row -->
+            <div class="cards">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-name">New Students</div>
+                        <div class="number">567</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fa fa-users icons"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-name">Total Courses</div>
+                        <div class="number">65</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fa fa-graduation-cap icons"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-name">Total Teachers</div>
+                        <div class="number">92</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fa fa-user icons"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-name">Fees Collection</div>
+                        <div class="number">20,87,900</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fa fa-indian-rupee-sign icons"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- second row first col -->
+            <div class="tables">
+                <div class="new-student-list">
+                    <div class="heading">
+                        <h2><u>Staffs Attendance</u></h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                    <table class="student-list">
+                        <thead>
+                            <td>S.No</td>
+                            <td>Employee ID</td>
+                            <td>Teacher Name</td>
+                            <td>Designation</td>
+                            <td>Check In</td>
+                            <td>Check Out</td>
+                            <td>Total Hours</td>
+                            <td>Status</td>
+                            <td>Action</td>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>E-234001</td>
+                                <td>Maya</td>
+                                <td>Physics</td>
+                                <td>8.00 Am</td>
+                                <td>4.10 Pm</td>
+                                <td>8.10</td>
+                                <td style="color: green">Present</td>
+                                
+                                <td>
+                                    <i class="fa fa-eye icons"></i>
+                                    <i class="fa fa-edit icons"></i>
+                                    <i class="fa fa-trash-alt icons"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>E-234002</td>
+                                <td>Rethu</td>
+                                <td>Fashion Design</td>
+                                <td>8.05 Am</td>
+                                <td>4.00 Pm</td>
+                                <td>7.55</td>
+                                
+                                <td style="color: green">Present</td>
+                               
+                                <td>
+                                    <i class="fa fa-eye icons"></i>
+                                    <i class="fa fa-edit icons"></i>
+                                    <i class="fa fa-trash-alt icons"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>E-234003</td>
+                                <td>Surya</td>
+                                <td>Commerce</td>
+                                
+                                <td>8.15 Am</td>
+                                <td>4.05 Pm</td>
+                                <td>7.50</td>
+                                <td style="color: green">Present</td>
+                                
+                                <td>
+                                    <i class="fa fa-eye icons"></i>
+                                    <i class="fa fa-edit icons"></i>
+                                    <i class="fa fa-trash-alt icons"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>E-234004</td>
+                                <td>Indhu</td>
+                                <td>Computer Science</td>
+                                
+                                <td>---</td>
+                                <td>---</td>
+                                <td>0</td>
+                                <td style="color: red">Absent</td>
+                                
+                                <td>
+                                    <i class="fa fa-eye icons"></i>
+                                    <i class="fa fa-edit icons"></i>
+                                    <i class="fa fa-trash-alt icons"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>E-234006</td>
+                                <td>Sunitha</td>
+                                <td>Sport Coach</td>
+                                
+                                <td>7.55 Am</td>
+                                <td>4.10 Pm</td>
+                                <td>8.15</td>
+                                <td style="color: green">Present</td>
+                                
+                                <td>
+                                    <i class="fa fa-eye icons"></i>
+                                    <i class="fa fa-edit icons"></i>
+                                    <i class="fa fa-trash-alt icons"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>E-2324007</td>
+                                <td>Raji</td>
+                                <td>Maths</td>
+                               
+                                <td>---</td>
+                                <td>---</td>
+                                <td>0</td>
+                                <td style="color: red">Absent</td>
+                               
+                                <td>
+                                    <i class="fa fa-eye icons"></i>
+                                    <i class="fa fa-edit icons"></i>
+                                    <i class="fa fa-trash-alt icons"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>
+        </div>
+       
+    </div>
+    
+</body>
+</html>

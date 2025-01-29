@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="images/college-logo.png"  alt="" class="logo">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="title">INDIAN COLLEGE</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <i class="fa fa-dashboard icons"></i>
+                        <div class="title">Dashboard</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="student.html">
+                        <i class="fa fa-users icons"></i>
+                        <div class="title">Students</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="teacher.html">
+                        <i class="fa fa-user icons"></i>
+                        <div class="title">Teachers</div>
+                    </a>
+                </li>
+                <!-- <li>
+                    <a href="#">
+                        <i class="fa fa-graduation-cap icons"></i>
+                        <div class="title">Courses</div>
+                    </a>
+                </li> -->
+                <!-- <li>
+                    <a href="dept.html">
+                        <i class="fa fa-building icons"></i>
+                        <div class="title">Department</div>
+                    </a>
+                </li> -->
+                <!-- <li>
+                    <a href="#">
+                        <i class="fa fa-user-group icons"></i>
+                        <div class="title">Staffs</div>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="fee.html">
+                        <i class="fa fa-indian-rupee-sign icons"></i>
+                        <div class="title">Fees</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="attendance.html">
+                        <i class="fa fa-clipboard-user icons"></i>
+                        <div class="title">Attendance</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- main navbar -->
+        <div class="main">
+            <div class="top-bar">
+                <div class="search">
+                    <input type="text" name="search" placeholder="Search Here">
+                    <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
+                </div>
+                <i class="fa-solid fa-bell"></i>
+                <div class="user">
+
+                    
+                    <div class="dropdown">
+                        <button class="dropbtn"><img src="Images/admin.avif" alt="admin"></button>
+                        <div class="dropdown-content">
+                            <a href="profile.html">Profile</a>
+                            <a href="setting.html">Settings</a>
+                            <a href="index.html">Logout</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+             <!-- first row -->
+            <div class="cards">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-name">Admission Fee<br>(Per person)</div>
+                        <div class="number">17,200</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fa fa-users icons"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-name">Total Courses</div>
+                        <div class="number">65</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fa fa-graduation-cap icons"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-name">Total Teachers</div>
+                        <div class="number">92</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fa fa-user icons"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-name">Fees Collection</div>
+                        <div class="number">20,87,900</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fa fa-indian-rupee-sign icons"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- second row first col -->
+            <div class="tables">
+                <div class="new-student-list">
+                    <div class="heading">
+                        <h2><u>Add Fee Details</u></h2>
+                        <a href="fee.html" class="btn">Back</a>
+                    </div>
+                    <form action="">
+                        
+                        <input type="text" placeholder="Roll No">
+                        <input type="text" placeholder="Student Name"><br>
+                        
+                        <select name="dept" id="fee" placeholder="select Department">
+                            <option value="">Select Branch</option>
+                            <option >Physics</option>
+                            <option >Chemistry</option>
+                            <option >Fashion Design</option>
+                            <option >Maths</option>
+                            <option >MCA</option>
+                            <option >BCA</option>
+                        </select>
+                        <select name="fee" id="fee">
+                            <option>Fee Type</option>
+                            <option value="tution">Tution</option>
+                            <option value="exam">Exam</option>
+                            <option value="admission">Admission</option>
+                            <option value="library">Library</option>
+                            <option value="transport">Transort</option>
+                            <option value="other">Other</option>
+                        </select><br>
+                        <select name="paymenttype" id="fee" placeholder="select Department">
+                            <option>Payment Type</option>
+                            <option >Cash</option>
+                            <option >Online Transfer</option>
+                            <option >Credit Card</option>
+                            <option >Cheque</option>
+                            <option >Draft</option>
+                        </select>
+                        <input type="number" placeholder="Amount" required>
+                        <br><br>
+                        <button>Submit</button>
+                    </form>
+                    <!-- <table class="student-list">
+                        <thead>
+                            <td>S.No</td>
+                            <td>Student Name</td>
+                            <td>Branch</td>
+                            <td>Fee Type</td>
+                            <td>Payment Due Date</td>
+                            <td>Payment Date</td>
+                            <td>Payment Type</td>
+                            <td>Status</td>
+                            <td>Amount</td>
+                            <td>Action</td>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Johny</td>
+                                <td>Physics</td>
+                                <td>Admission</td>
+                                <td>12-09-2025</td>
+                                <td>15-07-2025</td>
+                                <td>Online</td>
+                                <td style="color: green">Paid</td>
+                                <td>17,200</td>
+                                <td>
+                                    <i class="fa fa-eye icons"></i>
+                                    <i class="fa fa-edit icons"></i>
+                                    <i class="fa fa-trash-alt icons"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Rethu</td>
+                                <td>Fashion Design</td>
+                                <td>Transport</td>
+                                <td>12-09-2025</td>
+                                <td>---</td>
+                                <td>---</td>
+                                <td style="color: red">UnPaid</td>
+                                <td>1,200</td>
+                                <td>
+                                    <i class="fa fa-eye icons"></i>
+                                    <i class="fa fa-edit icons"></i>
+                                    <i class="fa fa-trash-alt icons"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Surya</td>
+                                <td>Commerce</td>
+                                <td>Exam</td>
+                                <td>12-09-2025</td>
+                                <td>18-07-2025</td>
+                                <td>Credit Card</td>
+                                <td style="color: green">Paid</td>
+                                <td>3,400</td>
+                                <td>
+                                    <i class="fa fa-eye icons"></i>
+                                    <i class="fa fa-edit icons"></i>
+                                    <i class="fa fa-trash-alt icons"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Indhu</td>
+                                <td>Computer Science</td>
+                                <td>Other</td>
+                                <td>12-09-2025</td>
+                                <td>19-07-2025</td>
+                                <td>Cash</td>
+                                <td style="color: green">Paid</td>
+                                <td>700</td>
+                                <td>
+                                    <i class="fa fa-eye icons"></i>
+                                    <i class="fa fa-edit icons"></i>
+                                    <i class="fa fa-trash-alt icons"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Sunitha</td>
+                                <td>English</td>
+                                <td>Tution</td>
+                                <td>12-09-2025</td>
+                                <td>21-07-2025</td>
+                                <td>Cheque</td>
+                                <td style="color: Yellow">Pending...</td>
+                                <td>17,200</td>
+                                <td>
+                                    <i class="fa fa-eye icons"></i>
+                                    <i class="fa fa-edit icons"></i>
+                                    <i class="fa fa-trash-alt icons"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Raji</td>
+                                <td>Maths</td>
+                                <td>Library</td>
+                                <td>12-09-2025</td>
+                                <td>25-08-2025</td>
+                                <td>Online</td>
+                                <td style="color: green">Paid</td>
+                                <td>1,400</td>
+                                <td>
+                                    <i class="fa fa-eye icons"></i>
+                                    <i class="fa fa-edit icons"></i>
+                                    <i class="fa fa-trash-alt icons"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table> -->
+                </div>
+                
+            </div>
+        </div>
+       
+    </div>
+    
+</body>
+</html>
